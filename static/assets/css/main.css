@@ -1352,7 +1352,7 @@ input, select, textarea {
 			display: -moz-flex;
 			display: -webkit-flex;
 			display: -ms-flex;
-			display: flex;
+			display: block;
 			margin-bottom: 0;
 			list-style: none;
 			padding-left: 0;
@@ -1362,11 +1362,11 @@ input, select, textarea {
 
 			#header nav ul li {
 				padding-left: 0;
-				border-left: solid 1px #ffffff;
+				border: solid 1px #ffffff;
+				border-radius: 1px;
 			}
 
 				#header nav ul li:first-child {
-					border-left: 0;
 				}
 
 				#header nav ul li a {
@@ -1374,11 +1374,10 @@ input, select, textarea {
 					min-width: 7.5rem;
 					height: 2.75rem;
 					line-height: 2.75rem;
-					padding: 0 1.25rem 0 1.45rem;
+					padding: 0 1.25rem 0 1.25rem;
 					text-transform: uppercase;
 					letter-spacing: 0.2rem;
 					font-size: 0.8rem;
-					border-bottom: 0;
 				}
 
 					#header nav ul li a:hover {
@@ -1394,14 +1393,12 @@ input, select, textarea {
 			display: block;
 			position: absolute;
 			top: 0;
-			left: calc(50% - 1px);
 			width: 1px;
-			height: 100%;
+			height: 0%;
 			background: #ffffff;
 		}
 
 		#header nav.use-middle ul li.is-middle {
-			border-left: 0;
 		}
 
 		body.is-article-visible #header {
@@ -1493,12 +1490,11 @@ input, select, textarea {
 				}
 
 					#header nav ul li {
-						border-left: 0;
 						border-top: solid 1px #ffffff;
 					}
 
 						#header nav ul li:first-child {
-							border-top: 0;
+							border-bottom: 0;
 						}
 
 						#header nav ul li a {
